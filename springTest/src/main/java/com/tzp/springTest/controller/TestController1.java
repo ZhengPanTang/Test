@@ -53,7 +53,7 @@ public class TestController1 {
 		System.out.println("------------------"+(end-begin)+"---------------------------");
 		return errors;
 	}
-	
+	/*从request对象里取出上送参数到map中*/
 	public Map<String,Object> copyParameterFromRequest(HttpServletRequest request){
 		Map<String,Object> returnMap = new HashMap<String,Object>();
 		Enumeration<String> enumeration= request.getParameterNames();
